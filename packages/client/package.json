@@ -1,0 +1,33 @@
+{
+  "name": "@backyard-borrow/client",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@types/jest": "^23.0.2",
+    "@types/node": "^10.3.2",
+    "@types/react": "^16.3.17",
+    "@types/react-dom": "^16.0.6",
+    "@types/react-router-dom": "^5.1.4",
+    "@types/styled-components": "^5.1.0",
+    "react-scripts-ts": "2.16.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.0.0-beta.43",
+    "@material-ui/core": "^4.9.10",
+    "@material-ui/icons": "^4.9.1",
+    "formik": "^2.1.4",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-router-dom": "^5.1.2",
+    "styled-components": "^5.1.0",
+    "yup": "^0.28.3",
+    "@backyard-borrow/common": "^1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  }
+}
