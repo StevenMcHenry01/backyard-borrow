@@ -16,7 +16,9 @@ import { Visibility, VisibilityOff } from '@material-ui/icons'
 // My imports
 import {registerValidationScheme} from '@backyard-borrow/common'
 
-const RegisterView = () => {
+const RegisterView = (props: any) => {
+  const {submit} = props
+  
   // STYLING
   // const theme = useTheme()
   const useStyles = makeStyles({
@@ -39,10 +41,10 @@ const RegisterView = () => {
     <>
       <Formik
         initialValues={{ email: '', password: '' }}
-        onSubmit={(data, { setSubmitting }) => {
+        onSubmit={async (data, { setSubmitting }) => {
           setSubmitting(true)
           // make async call
-          console.log(data)
+          await submit(data)
           setSubmitting(false)
         }}
         validationSchema={registerValidationScheme}
@@ -59,7 +61,6 @@ const RegisterView = () => {
         }) => (
           <Form className={classes.form}>
             <TextField
-              autoComplete='new-password'
               placeholder='email'
               name='email'
               label='email'
@@ -96,7 +97,6 @@ const RegisterView = () => {
                 ),
               }}
             />
-
             <Typography>
               <Link href='#'>Forgot Password</Link>
             </Typography>
@@ -110,7 +110,6 @@ const RegisterView = () => {
                 Register
               </Button>
             </FormControl>
-
             <Typography>
               or <Link href='#'>Sign In</Link>
             </Typography>

@@ -22,7 +22,8 @@
     "react-router-dom": "^5.1.2",
     "styled-components": "^5.1.0",
     "yup": "^0.28.3",
-    "@backyard-borrow/common": "^1.0.0"
+    "@backyard-borrow/common": "^1.0.0",
+    "@backyard-borrow/controller": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts-ts start",

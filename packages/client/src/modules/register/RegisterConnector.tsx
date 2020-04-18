@@ -1,8 +1,11 @@
 import * as React from 'react'
 import RegisterView from './view/RegisterView'
+import { useRegisterController } from '@backyard-borrow/controller'
+
 export const RegisterConnector = () => {
-  // const handleSubmit = (values: any) => {
-  //   console.log(values)
-  // }
-  return <RegisterView />
+  const {submit} = useRegisterController()
+
+  return (
+      <RegisterView submit={submit}/> 
+  )
 }
