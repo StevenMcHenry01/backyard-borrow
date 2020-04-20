@@ -1,8 +1,8 @@
 {
     "private": true,
     "scripts": {
-        "build:server": "lerna run build --scope={@backyard-borrow/shared,@backyard-borrow/server}",
-        "build:client": "lerna run build --scope={@backyard-borrow/shared,@backyard-borrow/client}"
+        "build:server": "lerna run build --scope={@backyard-borrow/shared,@backyard-borrow/controller,@backyard-borrow/server}",
+        "build:client": "lerna run build --scope={@backyard-borrow/shared,@backyard-borrow/controller,@backyard-borrow/client}"
     },
     "workspaces": {
         "packages": [
