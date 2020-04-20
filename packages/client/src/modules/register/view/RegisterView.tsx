@@ -14,7 +14,7 @@ import {
 import { Visibility, VisibilityOff } from '@material-ui/icons'
 
 // My imports
-import {registerValidationScheme} from '@backyard-borrow/common'
+import {registerValidationScheme} from '@backyard-borrow/shared'
 
 const RegisterView = (props: any) => {
   const {submit} = props

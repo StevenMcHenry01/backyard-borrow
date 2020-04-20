@@ -7,7 +7,7 @@ import {
   emailNotLongEnough,
   invalidEmail,
   passwordNotLongEnough,
-} from '@backyard-borrow/common'
+} from '@backyard-borrow/shared'
 import { TestClient } from '../../../utils/TestClient'
 import { createTestConn } from '../../../testUtils/createTestConn'
 

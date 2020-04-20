@@ -1,7 +1,19 @@
 {
     "private": true,
+    "scripts": {
+        "build:server": "lerna run build --scope={@backyard-borrow/shared,@backyard-borrow/server}"
+    },
     "workspaces": {
-        "packages": ["packages/*"],
-        "nohoist": ["**/rimraf","**/rimraf/**"]
+        "packages": [
+            "packages/*"
+        ],
+        "nohoist": [
+            "**/rimraf",
+            "**/rimraf/**"
+        ]
+    },
+    "name": "backyard-borrow",
+    "devDependencies": {
+        "lerna": "^3.20.2"
     }
 }

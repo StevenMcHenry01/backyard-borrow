@@ -1,5 +1,5 @@
 {
-  "name": "@backyard-borrow/common",
+  "name": "@backyard-borrow/shared",
   "version": "1.0.0",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

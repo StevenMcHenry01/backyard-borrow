@@ -7,7 +7,7 @@ import { sendEmail } from '../../../utils/sendEmail'
 import {
   duplicateEmail,
   registerValidationScheme as schema,
-} from '@backyard-borrow/common'
+} from '@backyard-borrow/shared'
 
 export const resolvers: ResolverMap = {
   Mutation: {
