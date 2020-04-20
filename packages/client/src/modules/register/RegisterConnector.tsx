@@ -4,7 +4,6 @@ import { useRegisterController } from '@backyard-borrow/controller'
 
 export const RegisterConnector = () => {
   const {submit} = useRegisterController()
-
   return (
       <RegisterView submit={submit}/> 
   )

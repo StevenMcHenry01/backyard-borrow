@@ -5,7 +5,8 @@ import { gql, useMutation } from '@apollo/client'
 // My imports
 
 export const useRegisterController = () => {
-  const [register, { data }] = useMutation(registerMutation)
+  // const [register, { data }] = useMutation(registerMutation)
+  const [register] = useMutation(registerMutation)
 
   const submit = async (values: any) => {
     await register({ variables: values })
