@@ -1,20 +1,26 @@
 {
-    "private": true,
-    "scripts": {
-        "build:server": "lerna run build --scope={@backyard-borrow/shared,@backyard-borrow/controller,@backyard-borrow/server}",
-        "build:client": "lerna run build --scope={@backyard-borrow/shared,@backyard-borrow/controller,@backyard-borrow/client}"
-    },
-    "workspaces": {
-        "packages": [
-            "packages/*"
-        ],
-        "nohoist": [
-            "**/rimraf",
-            "**/rimraf/**"
-        ]
-    },
-    "name": "backyard-borrow",
-    "devDependencies": {
-        "lerna": "^3.20.2"
-    }
+  "private": true,
+  "scripts": {
+    "build:server": "lerna run build --scope={@backyard-borrow/shared,@backyard-borrow/controller,@backyard-borrow/server}",
+    "build:client": "lerna run build --scope={@backyard-borrow/shared,@backyard-borrow/controller,@backyard-borrow/client}"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/rimraf",
+      "**/rimraf/**",
+      "**/expo",
+      "**/expo/**",
+      "**/react-native-typescript-transformer",
+      "**/react-native-typescript-transformer/**",
+      "**/metro-bundler-config-yarn-workspaces",
+      "**/metro-bundler-config-yarn-workspaces/**"
+    ]
+  },
+  "name": "backyard-borrow",
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  }
 }

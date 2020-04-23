@@ -26,6 +26,6 @@ WORKDIR /backyard-borrow/packages/server
 ENV NODE_ENV production
 
 # designate port to expose
-EXPOSE 4000
+EXPOSE 8080
 
 CMD ["node", "dist/index.js"]
