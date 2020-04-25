@@ -10,11 +10,7 @@
     ],
     "nohoist": [
       "**/rimraf",
-      "**/rimraf/**",
-      "**/expo",
-      "**/expo/**",
-      "**/metro-bundler-config-yarn-workspaces",
-      "**/metro-bundler-config-yarn-workspaces/**"
+      "**/rimraf/**"
     ]
   },
   "name": "backyard-borrow",
